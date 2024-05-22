@@ -1,0 +1,37 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top:220px;
+  margin-left: 598px;
+  margin-right:auto ;
+}
+.filter{
+  width: 242px;
+  height: 55px;
+  background: #E8EBF2;
+  border: 1px solid #4E148C;
+  font-family: Inter ,serif;
+  font-size: 16px;
+  font-weight: bold;
+  color:#4E148C;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+}
+.cheapest {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius:10px ;
+}
+.fastest {
+
+}
+.optimal {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius:10px ;
+}
+.active {
+  background-color: #4E148C;
+  color:white;
+}
+

@@ -1,0 +1,27 @@
+.filter {
+  background: #E8EBF2;
+  width: 276px;
+  height: 258px;
+  border-radius: 10px;
+  margin-left: 276px;
+  position: absolute; }
+
+.title {
+  color: #4E148C;
+  margin-left: 19px;
+  font-family: Inter,serif;
+  font-weight: bold;
+  font-size: 20px; }
+
+.choice {
+  list-style-type: none; }
+
+.mark {
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  border: 1px solid #4E148C;
+  margin-top: 19px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=connections.module.css.map */

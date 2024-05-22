@@ -1,0 +1,38 @@
+.filter{
+  background: #E8EBF2;
+  width: 276px;
+  height:258px;
+  border-radius: 10px;
+  margin-left: 276px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.title{
+  color: #4E148C;
+  margin-left: 19px;
+  font-family: Inter,serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.choice{
+  list-style-type:none ;
+
+}
+.mark{
+ margin-left: 42px;
+
+}
+.text{
+
+  font-family: Inter,serif;
+  font-size: 16px;
+  color: #858AE3;
+}
+.check{
+  width: 20px;
+  height:17px;
+  border-radius: 4px;
+  border-color:#4e148c;
+}
