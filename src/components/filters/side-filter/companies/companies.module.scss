@@ -1,1 +1,32 @@
-.
+.companies{
+  width: 272px;
+  height: 198px;
+  background: #E8EBF2;
+  border-radius:10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top:510px;
+  left:285px;
+}
+.title{
+  margin: 19px;
+  font-family: Inter,serif;
+  font-weight: bold;
+  font-size: 20px;
+  color:#4e148c;
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.text{
+  font-family: Inter,serif;
+  font-size: 16px;
+  color: #858AE3;
+}
+.info{
+  margin-left: 45px;
+  margin-bottom: 21px;
+}

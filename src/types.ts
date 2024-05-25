@@ -1,4 +1,7 @@
-
+export interface TicketTime {
+    startTime: string;
+    endTime: string;
+}
 
 export interface TicketInfo {
     id: number;
@@ -7,8 +10,7 @@ export interface TicketInfo {
     company: string;
     price: number;
     currency: 'RUB';
-    startTime: string;
-    endTime: string;
+    time: TicketTime;
     duration: string;
     connectionAmount: number | null;
 }
