@@ -4,7 +4,6 @@ import  axios from "axios";
 
 export  const fetchTickets = createAsyncThunk<TicketInfo[]>('tickets/fetchTickets', async () => {
     const response = await axios.get('https://6ed34cebf4fa44db.mokky.dev/feilds')
-    console.log(response);
     return response.data
 
 })
