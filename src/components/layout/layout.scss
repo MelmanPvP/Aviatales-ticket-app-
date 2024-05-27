@@ -2,7 +2,11 @@
   display: flex;
   margin-bottom: 30px;
 }
-
+.tablet__mainwrapper{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 .filter__btn {
   padding: 18px;
   border: 1px solid rgb(78, 20, 140);
@@ -34,6 +38,11 @@
   border-radius: 10px;
   background: rgb(78, 20, 140);
   margin-bottom: 34px;
+  @media screen and (max-width: 768px) {
+   margin-top: 70px;
+    position: relative;
+    background: #4e148c;
+  }
 }
 
 .filter__lists {
@@ -85,12 +94,22 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+  @media screen and (max-width:430px){
+    width: 400px;
+    position: relative;
+    margin-left: 0;
+  }
 }
 
 .result__item {
   padding: 30px 40px 25px 30px;
   border-radius: 10px;
   background: rgb(232, 235, 242);
+  @media screen and (max-width:430px){
+    width: 360px;
+    position: relative;
+
+  }
 }
 
 .title__wrapper {
@@ -106,6 +125,9 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
+  @media screen and (max-width: 430px) {
+    margin-left: -60px;
+  }
 }
 
 .details__wrapper {
@@ -174,11 +196,13 @@
   border-radius: 10px;
   background: rgb(78, 20, 140);
   width: 727px;
-
-  margin-left: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   margin-top: 70px;
   border: none;
-  display: inline-block;
+
+  justify-content: center;
   @media screen and (max-width: 768px) {
     width: 100%;
     margin: 50px 0 10px;
@@ -197,10 +221,13 @@
 
   .tablet__wrapper {
     display: flex;
-    column-gap: 50px;
+    gap: 0;
     padding: 12px 23px;
     border-radius: 0 0 10px 10px;
-
+    background: #4e148c;
+    height: 223px;
+    width: 695px;
+    flex-direction: row;
     border-top: 1px solid rgb(255, 255, 255, 0.25);
 
     >*:nth-child(1) {
@@ -219,6 +246,7 @@
   .arrow__btn {
     transition: all .3s ease-in-out;
   }
+
 }
 
 @media screen and (max-width:768px) {
@@ -240,7 +268,7 @@
   }
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:430px) {
 
   .filter__lists,
   .tablet__wrapper {
@@ -256,7 +284,7 @@
   }
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:430px) {
   .filter__item {
     width: 75px;
   }

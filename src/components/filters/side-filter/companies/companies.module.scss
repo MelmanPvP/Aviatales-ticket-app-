@@ -8,6 +8,10 @@
   flex-direction: column;
   top:510px;
   left:285px;
+  @media screen and (max-width: 768px) {
+    left: 0;
+    top:45px;
+  }
 }
 .title{
   margin: 19px;

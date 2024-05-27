@@ -2,7 +2,7 @@ import PriceFilter from "../filters/price-fliter/price-filter.tsx";
 import Title from "../title/title.tsx";
 import ConnectionsFilter from "../filters/side-filter/connections/connections.tsx";
 import CompaniesFilter from "../filters/side-filter/companies/companies.tsx";
-
+import arrow from '../../../public/arrow.svg'
 import  './layout.scss'
 import {useEffect, useState} from "react";
 import {fetchTickets} from "../../store/tickets.ts";
@@ -21,7 +21,8 @@ export default function Layout () {
     useEffect(() => {
         dispatch(fetchTickets())
     }, [dispatch])
-    const calculateFlightDuration = (startTime: string, endTime: string): string => {
+    const calculateFlightDuration = (startTime: string, endTime: string) => {
+
         const start = new Date(`2022-01-01T${startTime}:00Z`);
         const end = new Date(`2022-01-01T${endTime}:00Z`);
 
@@ -32,7 +33,9 @@ export default function Layout () {
         const duration = end.getTime() - start.getTime();
         const hours = Math.floor(duration / (1000 * 60 * 60));
         const minutes = Math.round((duration / (1000 * 60)) % 60);
-        return `${hours} ч ${minutes} мин`;
+
+        return (`${hours} ч ${minutes} мин ` )
+
     };
     return (
         <>
@@ -49,29 +52,34 @@ export default function Layout () {
                     <div className="filter__list">
                         <span className="filter__item">{isOpen ? 'Закрыть настройки' : 'Открыть настройки'} </span>
                         <img onClick={handleOpenClose} className='arrow__btn'
-                             style={{transform: isOpen ? 'rotate(180deg)' : 'none'}} src='../icons/arrow.svg'
+                             style={{transform: isOpen ? 'rotate(180deg)' : 'none'}} src={arrow}
                              alt='arrow'/>
                     </div>
                 </div>
                 {isOpen &&
                     <div className='tablet__wrapper'>
-                        <CompaniesFilter />
-                        <ConnectionsFilter />
+                        <CompaniesFilter className='companies'/>
+                        <ConnectionsFilter className='tablet'/>
                     </div>}
             </div>
         </div>
+            {!isOpen && <div className='tablet__mainwrapper'>
+                <CompaniesFilter />
+                <ConnectionsFilter />
+                </div>}
         <div className="result__wrapper">
             {status === 'loading' &&
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
 
                 </div>}
             {status === 'error' && <p>Error: {error}</p>}
+
             {status === 'success' &&
                 tickets.map((ticket) => (
                     <div className='result__item' key={ticket.id}>
                         <div className="title__wrapper">
                             <div className="result__price">{ticket.price} {ticket.currency}</div>
-                            <img className="result__logo" src={`../icons/${ticket.company}.svg`} alt="air-company"/>
+                            <img className="result__logo" src={`../../../public/${ticket.company}.svg`} alt="air-company"/>
                         </div>
                         <div className="details__wrapper">
                             <div className="location">

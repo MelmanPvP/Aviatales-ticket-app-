@@ -8,4 +8,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 29px;
+  @media screen and (max-width:430px){
+    width: 400px;
+  }
 }

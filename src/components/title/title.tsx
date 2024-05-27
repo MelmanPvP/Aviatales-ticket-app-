@@ -1,4 +1,4 @@
-import plane from "../icons/plane.png";
+import plane from "../../../public/plane.png";
 import css from "./title.module.scss";
 export default function Title () {
     return (
