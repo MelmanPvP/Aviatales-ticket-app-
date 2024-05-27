@@ -2,8 +2,8 @@ import PriceFilter from "../filters/price-fliter/price-filter.tsx";
 import Title from "../title/title.tsx";
 import ConnectionsFilter from "../filters/side-filter/connections/connections.tsx";
 import CompaniesFilter from "../filters/side-filter/companies/companies.tsx";
-import css from "../../App.module.scss";
 
+import  './layout.scss'
 import {useEffect, useState} from "react";
 import {fetchTickets} from "../../store/tickets.ts";
 import {useDispatch, useSelector} from "react-redux";
@@ -55,8 +55,8 @@ export default function Layout () {
                 </div>
                 {isOpen &&
                     <div className='tablet__wrapper'>
-                        <CompaniesFilter className="tablet"/>
-                        <ConnectionsFilter className="tablet"/>
+                        <CompaniesFilter />
+                        <ConnectionsFilter />
                     </div>}
             </div>
         </div>
@@ -71,7 +71,7 @@ export default function Layout () {
                     <div className='result__item' key={ticket.id}>
                         <div className="title__wrapper">
                             <div className="result__price">{ticket.price} {ticket.currency}</div>
-                            <img className="result__logo" src={`./public/${ticket.company}.svg`} alt="air-company"/>
+                            <img className="result__logo" src={`../icons/${ticket.company}.svg`} alt="air-company"/>
                         </div>
                         <div className="details__wrapper">
                             <div className="location">
@@ -102,10 +102,7 @@ export default function Layout () {
         </div>
         <button className="btn__more">Загрузить еще билеты</button>
 
-    <div className={css.tickets}>
 
-
-    </div>
 </>
 )
 }
