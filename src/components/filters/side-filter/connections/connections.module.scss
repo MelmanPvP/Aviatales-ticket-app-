@@ -12,6 +12,12 @@
     right: 250px;
     top:25px;
   }
+  @media screen and (max-width: 430px) {
+    margin-left: 0;
+    right: 0;
+    height: 153px;
+    width: 216px;
+  }
 }
 .title{
   color: #4E148C;

@@ -39,7 +39,7 @@
   background: rgb(78, 20, 140);
   margin-bottom: 34px;
   @media screen and (max-width: 768px) {
-   margin-top: 70px;
+    margin-top: 70px;
     position: relative;
     background: #4e148c;
   }
@@ -277,6 +277,7 @@
 
   .tablet__wrapper {
     column-gap: 15px;
+    width: 300px;
   }
 
   .filter__item {
@@ -300,4 +301,10 @@
     flex-wrap: wrap;
     gap: 10px;
   }
+}
+
+@media screen and (max-width: 430px) {
+    .tablet__wrapper {
+      width:370px;
+    }
 }
