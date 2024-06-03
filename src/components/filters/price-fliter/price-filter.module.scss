@@ -5,6 +5,9 @@
   top:220px;
   margin-left: 578px;
   margin-right:auto ;
+  @media screen and (max-width: 1440px) {
+    margin-left: 348px;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     margin: 0;

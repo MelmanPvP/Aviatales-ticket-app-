@@ -79,7 +79,7 @@ export default function Layout () {
                     <div className='result__item' key={ticket.id}>
                         <div className="title__wrapper">
                             <div className="result__price">{ticket.price} {ticket.currency}</div>
-                            <img className="result__logo" src={`../../../public/${ticket.company}.svg`} alt="air-company"/>
+                            <img className="result__logo" src={`../../../${ticket.company}.svg`} alt="air-company"/>
                         </div>
                         <div className="details__wrapper">
                             <div className="location">
