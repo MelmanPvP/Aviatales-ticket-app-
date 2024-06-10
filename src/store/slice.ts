@@ -7,8 +7,9 @@ const initialTransferState = {
     transfer3: false,
 
 }
+
 interface CompanyPayload {
-    [key: string]: string
+    [key: string]:boolean
 }
 
 interface ConnectionsFiltersPayload {
