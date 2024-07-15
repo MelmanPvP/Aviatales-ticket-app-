@@ -22,6 +22,7 @@ const Layout: React.FC = () => {
     const filteredTickets = useSelector((state: RootState) => selectFilteredTickets(state));
 
     useEffect(() => {
+        // @ts-ignore
         dispatch(fetchTickets());
     }, [dispatch]);
 
