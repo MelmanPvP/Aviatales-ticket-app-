@@ -15,7 +15,6 @@ export const selectFilteredTickets = (state: RootState) => {
     }
 
     if (isAnyTransferSelected) {
-        // @ts-ignore
         filteredTickets = filteredTickets.filter(ticket => selectedTransfers[`transfer${ticket.connectionAmount}`]);
     }
 
