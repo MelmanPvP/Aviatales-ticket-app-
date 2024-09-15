@@ -1,4 +1,4 @@
-import plane from "../../../dist/plane.svg";
+import plane from "../../../public/plane.svg";
 import css from "./title.module.scss";
 export default function Title () {
     return (
