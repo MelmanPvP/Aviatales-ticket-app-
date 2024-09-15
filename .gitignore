@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 Aviatales--ticket-search-app-/
 /node_modules/
+/node_modules/
