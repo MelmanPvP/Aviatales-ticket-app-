@@ -1,4 +1,4 @@
-import plane from "../../../public/plane.svg";
+import plane from "https://github.com/MelmanPvP/Aviatales-ticket-app-/blob/master/dist/plane.svg";
 import css from "./title.module.scss";
 export default function Title () {
     return (
