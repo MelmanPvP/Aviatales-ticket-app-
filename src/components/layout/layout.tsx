@@ -90,7 +90,7 @@ const Layout: React.FC = () => {
                                 <div className="result__price">
                                     {ticket.price} {ticket.currency}
                                 </div>
-                                <img className="result__logo" src='https://github.com/MelmanPvP/Aviatales-ticket-app-/blob/master/dist/plane.svg' alt="air-company" />
+                                <img className="result__logo" src={`/dist/${ticket.company}.svg`} alt="air-company" />
                             </div>
                             <div className="details__wrapper">
                                 <div className="location">
