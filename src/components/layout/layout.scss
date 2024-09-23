@@ -2,6 +2,10 @@
   display: flex;
   margin-bottom: 30px;
 }
+.result__logo{
+  width: 143px;
+  height: 46px;
+}
 .tablet__mainwrapper{
   @media screen and (max-width: 768px) {
     display: none;
