@@ -15,7 +15,8 @@ const CompaniesFilter: React.FC<CompanyFiltersProps> = () => {
         { name: 'Победа', key:'pobeda' },
         { name: 'Red Wings', key:'red-wings' },
         { name: 'S7 Airlines', key:'s7-airlines' },
-        {name: 'Utair', key:'utair' },
+        {name: 'Utair', key:'utair'},
+        {name:'Aeroflot',key:'aeroflot'},
     ];
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
