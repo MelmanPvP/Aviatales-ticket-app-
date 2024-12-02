@@ -44,7 +44,7 @@ const Layout: React.FC = () => {
 
     return (
         <>
-            <PriceFilter />
+            {/*<PriceFilter />*/}
             <Title />
             <div className="filter__wrapper">
                 <div className="filter__menu">
@@ -126,7 +126,7 @@ const Layout: React.FC = () => {
                         </div>
                     ))}
             </div>
-            <button className="btn__more">Загрузить еще билеты</button>
+            {/*<button className="btn__more">Загрузить еще билеты</button>*/}
         </>
     );
 };
