@@ -1,7 +1,7 @@
 // src/layout.tsx
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PriceFilter from '../filters/price-fliter/price-filter.tsx';
+// import PriceFilter from '../filters/price-fliter/price-filter.tsx';
 import Title from '../title/title.tsx';
 import ConnectionsFilter from '../filters/side-filter/connections/connections.tsx';
 import CompaniesFilter from '../filters/side-filter/companies/companies.tsx';
